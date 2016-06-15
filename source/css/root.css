@@ -1,0 +1,26 @@
+/* @import '../../node_modules/normalize.css/normalize.css'; */
+@import '_variables';
+
+body {
+  background-color: $matt-var;
+}
+
+.boom {
+  display: flex;
+}
+
+.nesting {
+  .nesty {
+    color: red;
+  }
+}
+
+.bem-class {
+  color: $matt-var;
+  &__element {
+    position: fixed;
+    &--mod {
+      font-size: 5rem;
+    }
+  }
+}
