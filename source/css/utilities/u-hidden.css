@@ -1,0 +1,40 @@
+.u-hidden {
+  display: none;
+  &\@mobile {
+    @media (--mq-mobile) {
+      display: none !important;
+      color: $color-black;
+      width: $breakpoint-sm-max;
+    }
+  }
+  &\@xs {
+    @media (--mq-xs) {
+      display: none !important;
+    }
+  }
+  &\@sm {
+    @media (--mq-sm) {
+      display: none !important;
+    }
+  }
+  &\@sm-min {
+    @media (--mq-sm-min) {
+      display: none !important;
+    }
+  }
+  &\@md {
+    @media (--mq-md) {
+      display: none !important;
+    }
+  }
+  &\@md-min {
+    @media (--mq-md-min) {
+      display: none !important;
+    }
+  }
+  &\@lg {
+    @media (--mq-lg) {
+      display: none !important;
+    }
+  }
+}

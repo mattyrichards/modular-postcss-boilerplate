@@ -1,0 +1,38 @@
+/*
+-- Colours
+*/
+$color-white: #ffffff;
+$color-black: #000000;
+$color-brand-primary: #e72c7b;
+$color-border: #cbcdce;
+$color-error: #d75453;
+$color-success: #00b20c;
+
+/*
+-- Font sizes
+*/
+$font-size-1: 1.2rem;
+$font-size-2: 1.4rem;
+$font-size-3: 1.6rem;
+$font-size-4: 2rem;
+
+/*
+-- Breakpoints
+*/
+$breakpoint-xs: 480px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1200px;
+$breakpoint-xs-max: calc($breakpoint-sm - 1);
+$breakpoint-sm-max: calc($breakpoint-md - 1);
+$breakpoint-md-max: calc($breakpoint-lg - 1);
+
+/*
+-- Spacing
+*/
+$base-spacing: 1rem;
+$base-spacing-extra-small: calc($base-spacing / 5);
+$base-spacing-small: calc($base-spacing / 2);
+$base-spacing-medium: calc($base-spacing * 2);
+$base-spacing-large: calc($base-spacing * 3);
+$base-spacing-extra-large: calc($base-spacing * 4);

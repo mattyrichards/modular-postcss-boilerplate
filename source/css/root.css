@@ -1,26 +1,26 @@
-/* @import '../../node_modules/normalize.css/normalize.css'; */
-@import '_variables';
+@import 'variables.css';
+@import 'media-queries.css';
+/*
+-- Normalisation.
+*/
+@import '../../node_modules/normalize.css/normalize.css';
+@import 'initialise.css';
+/*
+-- Utility classes
+*/
+@import 'utilities/u-hidden.css';
 
-body {
-  background-color: $matt-var;
+.chat {
+  color: $color-black;
+  margin-left: $breakpoint-md-max;
 }
 
-.boom {
-  display: flex;
-}
-
-.nesting {
-  .nesty {
-    color: red;
+@define-mixin text-mixin $color:#000000 {
+  .colored-element {
+    color: $(color);
   }
 }
 
-.bem-class {
-  color: $matt-var;
-  &__element {
-    position: fixed;
-    &--mod {
-      font-size: 5rem;
-    }
-  }
-}
+@mixin text-mixin #ffffff;
+
+@mixin text-mixin;

@@ -1,0 +1,5 @@
+/* Set html font size to enable use of rem units */
+
+html {
+  font-size: 62.5%;
+}
