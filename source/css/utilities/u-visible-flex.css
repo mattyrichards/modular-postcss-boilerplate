@@ -1,0 +1,47 @@
+.u-visible-flex\@mobile,
+.u-visible-flex\@xs,
+.u-visible-flex\@sm,
+.u-visible-flex\@sm-min,
+.u-visible-flex\@md,
+.u-visible-flex\@md-min,
+.u-visible-flex\@lg {
+  display: none !important;
+}
+
+.u-visible-flex {
+  &\@mobile {
+    @media (--mq-mobile) {
+      display: flex !important;
+    }
+  }
+  &\@xs {
+    @media (--mq-xs) {
+      display: flex !important;
+    }
+  }
+  &\@sm {
+    @media (--mq-sm) {
+      display: flex !important;
+    }
+  }
+  &\@sm-min {
+    @media (--mq-sm-min) {
+      display: flex !important;
+    }
+  }
+  &\@md {
+    @media (--mq-md) {
+      display: flex !important;
+    }
+  }
+  &\@md-min {
+    @media (--mq-md-min) {
+      display: flex !important;
+    }
+  }
+  &\@lg {
+    @media (--mq-lg) {
+      display: flex !important;
+    }
+  }
+}

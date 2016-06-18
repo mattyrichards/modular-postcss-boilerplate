@@ -1,0 +1,47 @@
+.u-visible\@mobile,
+.u-visible\@xs,
+.u-visible\@sm,
+.u-visible\@sm-min,
+.u-visible\@md,
+.u-visible\@md-min,
+.u-visible\@lg {
+  display: none !important;
+}
+
+.u-visible {
+  &\@mobile {
+    @media (--mq-mobile) {
+      display: block !important;
+    }
+  }
+  &\@xs {
+    @media (--mq-xs) {
+      display: block !important;
+    }
+  }
+  &\@sm {
+    @media (--mq-sm) {
+      display: block !important;
+    }
+  }
+  &\@sm-min {
+    @media (--mq-sm-min) {
+      display: block !important;
+    }
+  }
+  &\@md {
+    @media (--mq-md) {
+      display: block !important;
+    }
+  }
+  &\@md-min {
+    @media (--mq-md-min) {
+      display: block !important;
+    }
+  }
+  &\@lg {
+    @media (--mq-lg) {
+      display: block !important;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+.u-visible-inline\@mobile,
+.u-visible-inline\@xs,
+.u-visible-inline\@sm,
+.u-visible-inline\@sm-min,
+.u-visible-inline\@md,
+.u-visible-inline\@md-min,
+.u-visible-inline\@lg {
+  display: none !important;
+}
+
+.u-visible-inline {
+  &\@mobile {
+    @media (--mq-mobile) {
+      display: inline !important;
+    }
+  }
+  &\@xs {
+    @media (--mq-xs) {
+      display: inline !important;
+    }
+  }
+  &\@sm {
+    @media (--mq-sm) {
+      display: inline !important;
+    }
+  }
+  &\@sm-min {
+    @media (--mq-sm-min) {
+      display: inline !important;
+    }
+  }
+  &\@md {
+    @media (--mq-md) {
+      display: inline !important;
+    }
+  }
+  &\@md-min {
+    @media (--mq-md-min) {
+      display: inline !important;
+    }
+  }
+  &\@lg {
+    @media (--mq-lg) {
+      display: inline !important;
+    }
+  }
+}

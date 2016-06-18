@@ -1,0 +1,47 @@
+.u-visible-inline-block\@mobile,
+.u-visible-inline-block\@xs,
+.u-visible-inline-block\@sm,
+.u-visible-inline-block\@sm-min,
+.u-visible-inline-block\@md,
+.u-visible-inline-block\@md-min,
+.u-visible-inline-block\@lg {
+  display: none !important;
+}
+
+.u-visible-inline-block {
+  &\@mobile {
+    @media (--mq-mobile) {
+      display: inline-block !important;
+    }
+  }
+  &\@xs {
+    @media (--mq-xs) {
+      display: inline-block !important;
+    }
+  }
+  &\@sm {
+    @media (--mq-sm) {
+      display: inline-block !important;
+    }
+  }
+  &\@sm-min {
+    @media (--mq-sm-min) {
+      display: inline-block !important;
+    }
+  }
+  &\@md {
+    @media (--mq-md) {
+      display: inline-block !important;
+    }
+  }
+  &\@md-min {
+    @media (--mq-md-min) {
+      display: inline-block !important;
+    }
+  }
+  &\@lg {
+    @media (--mq-lg) {
+      display: inline-block !important;
+    }
+  }
+}

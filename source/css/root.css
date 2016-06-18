@@ -9,6 +9,10 @@
 -- Utility classes
 */
 @import 'utilities/u-hidden.css';
+@import 'utilities/u-visible.css';
+@import 'utilities/u-visible-inline.css';
+@import 'utilities/u-visible-inline-block.css';
+@import 'utilities/u-visible-flex.css';
 
 .chat {
   color: $color-black;

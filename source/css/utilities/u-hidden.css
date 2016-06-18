@@ -1,10 +1,8 @@
 .u-hidden {
-  display: none;
+  display: none !important;
   &\@mobile {
     @media (--mq-mobile) {
       display: none !important;
-      color: $color-black;
-      width: $breakpoint-sm-max;
     }
   }
   &\@xs {
