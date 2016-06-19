@@ -13,18 +13,13 @@
 @import 'utilities/u-visible-inline.css';
 @import 'utilities/u-visible-inline-block.css';
 @import 'utilities/u-visible-flex.css';
+@import 'utilities/u-padding.css';
+@import 'utilities/u-padding-top.css';
+@import 'utilities/u-padding-right.css';
+@import 'utilities/u-padding-bottom.css';
+@import 'utilities/u-padding-left.css';
 
 .chat {
   color: $color-black;
   margin-left: $breakpoint-md-max;
 }
-
-@define-mixin text-mixin $color:#000000 {
-  .colored-element {
-    color: $(color);
-  }
-}
-
-@mixin text-mixin #ffffff;
-
-@mixin text-mixin;

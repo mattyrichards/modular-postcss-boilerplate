@@ -1,0 +1,9 @@
+@define-mixin text-mixin $color:#000000 {
+  .colored-element {
+    color: $(color);
+  }
+}
+
+@mixin text-mixin #ffffff;
+
+@mixin text-mixin;
