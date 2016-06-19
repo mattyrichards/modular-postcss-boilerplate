@@ -18,6 +18,11 @@
 @import 'utilities/u-padding-right.css';
 @import 'utilities/u-padding-bottom.css';
 @import 'utilities/u-padding-left.css';
+@import 'utilities/u-margin.css';
+@import 'utilities/u-margin-top.css';
+@import 'utilities/u-margin-right.css';
+@import 'utilities/u-margin-bottom.css';
+@import 'utilities/u-margin-left.css';
 
 .chat {
   color: $color-black;

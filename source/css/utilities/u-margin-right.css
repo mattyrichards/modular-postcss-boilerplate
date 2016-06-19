@@ -1,0 +1,56 @@
+.u-margin-right {
+  margin-right: $base-spacing;
+  &--extra-small {
+    margin-right: $base-spacing-extra-small;
+  }
+  &--small {
+    margin-right: $base-spacing-small;
+  }
+  &--medium {
+    margin-right: $base-spacing-medium;
+  }
+  &--large {
+    margin-right: $base-spacing-large;
+  }
+  &--extra-large {
+    margin-right: $base-spacing-extra-large;
+  }
+  &--none {
+    margin-right: 0;
+    &\@mobile {
+      @media (--mq-mobile) {
+        margin-right: 0;
+      }
+    }
+    &\@xs {
+      @media (--mq-xs) {
+        margin-right: 0;
+      }
+    }
+    &\@sm {
+      @media (--mq-sm) {
+        margin-right: 0;
+      }
+    }
+    &\@sm-min {
+      @media (--mq-sm-min) {
+        margin-right: 0;
+      }
+    }
+    &\@md {
+      @media (--mq-md) {
+        margin-right: 0;
+      }
+    }
+    &\@md-min {
+      @media (--mq-md-min) {
+        margin-right: 0;
+      }
+    }
+    &\@lg {
+      @media (--mq-lg) {
+        margin-right: 0;
+      }
+    }
+  }
+}

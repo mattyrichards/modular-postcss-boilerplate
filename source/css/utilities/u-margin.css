@@ -1,0 +1,56 @@
+.u-margin {
+  margin: $base-spacing;
+  &--extra-small {
+    margin: $base-spacing-extra-small;
+  }
+  &--small {
+    margin: $base-spacing-small;
+  }
+  &--medium {
+    margin: $base-spacing-medium;
+  }
+  &--large {
+    margin: $base-spacing-large;
+  }
+  &--extra-large {
+    margin: $base-spacing-extra-large;
+  }
+  &--none {
+    margin: 0;
+    &\@mobile {
+      @media (--mq-mobile) {
+        margin: 0;
+      }
+    }
+    &\@xs {
+      @media (--mq-xs) {
+        margin: 0;
+      }
+    }
+    &\@sm {
+      @media (--mq-sm) {
+        margin: 0;
+      }
+    }
+    &\@sm-min {
+      @media (--mq-sm-min) {
+        margin: 0;
+      }
+    }
+    &\@md {
+      @media (--mq-md) {
+        margin: 0;
+      }
+    }
+    &\@md-min {
+      @media (--mq-md-min) {
+        margin: 0;
+      }
+    }
+    &\@lg {
+      @media (--mq-lg) {
+        margin: 0;
+      }
+    }
+  }
+}
