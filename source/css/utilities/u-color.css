@@ -1,0 +1,11 @@
+.u-color {
+  &--white {
+    color: $color-white;
+  }
+  &--black {
+    color: $color-black;
+  }
+  &--brand-primary {
+    color: $color-brand-primary;
+  }
+}

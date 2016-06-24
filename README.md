@@ -14,3 +14,6 @@ Responsive suffixes
 http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/
 AND
 postcss-custom-media
+
+Namespaces & BEM (special rules for utilities)
+Difference between objects and components i.e. objects are implementation agnostic (same link as above, I think...)
