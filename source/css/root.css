@@ -23,6 +23,11 @@
 @import 'utilities/u-margin-right.css';
 @import 'utilities/u-margin-bottom.css';
 @import 'utilities/u-margin-left.css';
+@import 'utilities/u-border.css';
+@import 'utilities/u-border-top.css';
+@import 'utilities/u-border-right.css';
+@import 'utilities/u-border-bottom.css';
+@import 'utilities/u-border-left.css';
 
 .chat {
   color: $color-black;

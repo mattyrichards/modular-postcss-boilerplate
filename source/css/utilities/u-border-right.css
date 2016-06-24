@@ -1,0 +1,43 @@
+.u-border-right {
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-right-color: $color-border;
+  &--none {
+    border-right-width: 0;
+    &\@mobile {
+      @media (--mq-mobile) {
+        border-right-width: 0;
+      }
+    }
+    &\@xs {
+      @media (--mq-xs) {
+        border-right-width: 0;
+      }
+    }
+    &\@sm {
+      @media (--mq-sm) {
+        border-right-width: 0;
+      }
+    }
+    &\@sm-min {
+      @media (--mq-sm-min) {
+        border-right-width: 0;
+      }
+    }
+    &\@md {
+      @media (--mq-md) {
+        border-right-width: 0;
+      }
+    }
+    &\@md-min {
+      @media (--mq-md-min) {
+        border-right-width: 0;
+      }
+    }
+    &\@lg {
+      @media (--mq-lg) {
+        border-right-width: 0;
+      }
+    }
+  }
+}

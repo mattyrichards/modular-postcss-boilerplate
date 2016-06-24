@@ -1,0 +1,43 @@
+.u-border-top {
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: $color-border;
+  &--none {
+    border-top-width: 0;
+    &\@mobile {
+      @media (--mq-mobile) {
+        border-top-width: 0;
+      }
+    }
+    &\@xs {
+      @media (--mq-xs) {
+        border-top-width: 0;
+      }
+    }
+    &\@sm {
+      @media (--mq-sm) {
+        border-top-width: 0;
+      }
+    }
+    &\@sm-min {
+      @media (--mq-sm-min) {
+        border-top-width: 0;
+      }
+    }
+    &\@md {
+      @media (--mq-md) {
+        border-top-width: 0;
+      }
+    }
+    &\@md-min {
+      @media (--mq-md-min) {
+        border-top-width: 0;
+      }
+    }
+    &\@lg {
+      @media (--mq-lg) {
+        border-top-width: 0;
+      }
+    }
+  }
+}
