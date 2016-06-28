@@ -11,4 +11,152 @@
   &--4 {
     font-size: $font-size-4;
   }
+  &--1 {
+    &\@mobile {
+      @media (--mq-mobile) {
+        font-size: $font-size-1;
+      }
+    }
+    &\@xs {
+      @media (--mq-xs) {
+        font-size: $font-size-1;
+      }
+    }
+    &\@sm {
+      @media (--mq-sm) {
+        font-size: $font-size-1;
+      }
+    }
+    &\@sm-min {
+      @media (--mq-sm-min) {
+        font-size: $font-size-1;
+      }
+    }
+    &\@md {
+      @media (--mq-md) {
+        font-size: $font-size-1;
+      }
+    }
+    &\@md-min {
+      @media (--mq-md-min) {
+        font-size: $font-size-1;
+      }
+    }
+    &\@lg {
+      @media (--mq-lg) {
+        font-size: $font-size-1;
+      }
+    }
+  }
+  &--2 {
+    &\@mobile {
+      @media (--mq-mobile) {
+        font-size: $font-size-2;
+      }
+    }
+    &\@xs {
+      @media (--mq-xs) {
+        font-size: $font-size-2;
+      }
+    }
+    &\@sm {
+      @media (--mq-sm) {
+        font-size: $font-size-2;
+      }
+    }
+    &\@sm-min {
+      @media (--mq-sm-min) {
+        font-size: $font-size-2;
+      }
+    }
+    &\@md {
+      @media (--mq-md) {
+        font-size: $font-size-2;
+      }
+    }
+    &\@md-min {
+      @media (--mq-md-min) {
+        font-size: $font-size-2;
+      }
+    }
+    &\@lg {
+      @media (--mq-lg) {
+        font-size: $font-size-2;
+      }
+    }
+  }
+  &--3 {
+    &\@mobile {
+      @media (--mq-mobile) {
+        font-size: $font-size-3;
+      }
+    }
+    &\@xs {
+      @media (--mq-xs) {
+        font-size: $font-size-3;
+      }
+    }
+    &\@sm {
+      @media (--mq-sm) {
+        font-size: $font-size-3;
+      }
+    }
+    &\@sm-min {
+      @media (--mq-sm-min) {
+        font-size: $font-size-3;
+      }
+    }
+    &\@md {
+      @media (--mq-md) {
+        font-size: $font-size-3;
+      }
+    }
+    &\@md-min {
+      @media (--mq-md-min) {
+        font-size: $font-size-3;
+      }
+    }
+    &\@lg {
+      @media (--mq-lg) {
+        font-size: $font-size-3;
+      }
+    }
+  }
+  &--4 {
+    &\@mobile {
+      @media (--mq-mobile) {
+        font-size: $font-size-4;
+      }
+    }
+    &\@xs {
+      @media (--mq-xs) {
+        font-size: $font-size-4;
+      }
+    }
+    &\@sm {
+      @media (--mq-sm) {
+        font-size: $font-size-4;
+      }
+    }
+    &\@sm-min {
+      @media (--mq-sm-min) {
+        font-size: $font-size-4;
+      }
+    }
+    &\@md {
+      @media (--mq-md) {
+        font-size: $font-size-4;
+      }
+    }
+    &\@md-min {
+      @media (--mq-md-min) {
+        font-size: $font-size-4;
+      }
+    }
+    &\@lg {
+      @media (--mq-lg) {
+        font-size: $font-size-4;
+      }
+    }
+  }
 }
