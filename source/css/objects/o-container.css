@@ -1,0 +1,16 @@
+.o-container {
+  width: 100%;
+  &--centered {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @media (--mq-sm-min) {
+    width: 750px;
+  }
+  @media (--mq-md-min) {
+    width: 930px;
+  }
+  @media (--mq-lg) {
+    width: 1000px;
+  }
+}

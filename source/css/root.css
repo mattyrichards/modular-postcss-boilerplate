@@ -6,6 +6,11 @@
 @import '../../node_modules/normalize.css/normalize.css';
 @import 'initialise.css';
 /*
+-- Object classes
+*/
+@import 'objects/o-container.css';
+@import 'objects/o-grid.css';
+/*
 -- Utility classes
 */
 @import 'utilities/u-hidden.css';
