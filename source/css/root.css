@@ -4,6 +4,7 @@
 -- Normalisation
 */
 @import '../../node_modules/normalize.css/normalize.css';
+@import '../../node_modules/font-awesome/css/font-awesome.css';
 @import 'initialise.css';
 /*
 -- Objects
@@ -15,7 +16,7 @@
 /*
 -- Components
 */
-
+@import 'components/c-notification.css';
 /*
 -- Utilities
 */
@@ -47,8 +48,3 @@
 @import 'utilities/u-position.css';
 @import 'utilities/u-width.css';
 @import 'utilities/u-height.css';
-
-.chat {
-  color: $color-black;
-  margin-left: $breakpoint-md-max;
-}

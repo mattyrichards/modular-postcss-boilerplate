@@ -14,6 +14,11 @@ var paths = require('./paths'),
     customMedia = require('postcss-custom-media'),
     simpleVars = require('postcss-simple-vars');
 
+gulp.task('import-fonts', function() {
+  gulp.src(paths.sourceFonts)
+    .pipe(gulp.dest(paths.buildFonts));
+});
+
 gulp.task('stylelint', function () {
   return gulp.src(paths.sourceCSS + '/**/*.css')
     .pipe(postcss(
@@ -60,6 +65,8 @@ gulp.task('build-css-prod', function () {
     .pipe(gulp.dest(paths.buildCSS));
 });
 
-gulp.task('default', ['stylelint', 'build-css-dev'], function() {
+gulp.task('build-prod', ['import-fonts', 'build-css-prod']);
+
+gulp.task('default', ['import-fonts', 'stylelint', 'build-css-dev'], function() {
   gulp.watch(paths.sourceCSS + '/**/*.css', ['stylelint', 'build-css-dev']);
 });

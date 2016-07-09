@@ -33,4 +33,226 @@
   &--100 {
     width: 100%;
   }
+  &--50 {
+    &\@mobile {
+      @media (--mq-mobile) {
+        width: 50%;
+      }
+    }
+    &\@xs {
+      @media (--mq-xs) {
+        width: 50%;
+      }
+    }
+    &\@sm {
+      @media (--mq-sm) {
+        width: 50%;
+      }
+    }
+    &\@sm-min {
+      @media (--mq-sm-min) {
+        width: 50%;
+      }
+    }
+    &\@md {
+      @media (--mq-md) {
+        width: 50%;
+      }
+    }
+    &\@md-min {
+      @media (--mq-md-min) {
+        width: 50%;
+      }
+    }
+    &\@lg {
+      @media (--mq-lg) {
+        width: 50%;
+      }
+    }
+  }
+  &--60 {
+    &\@mobile {
+      @media (--mq-mobile) {
+        width: 60%;
+      }
+    }
+    &\@xs {
+      @media (--mq-xs) {
+        width: 60%;
+      }
+    }
+    &\@sm {
+      @media (--mq-sm) {
+        width: 60%;
+      }
+    }
+    &\@sm-min {
+      @media (--mq-sm-min) {
+        width: 60%;
+      }
+    }
+    &\@md {
+      @media (--mq-md) {
+        width: 60%;
+      }
+    }
+    &\@md-min {
+      @media (--mq-md-min) {
+        width: 60%;
+      }
+    }
+    &\@lg {
+      @media (--mq-lg) {
+        width: 60%;
+      }
+    }
+  }
+  &--70 {
+    &\@mobile {
+      @media (--mq-mobile) {
+        width: 70%;
+      }
+    }
+    &\@xs {
+      @media (--mq-xs) {
+        width: 70%;
+      }
+    }
+    &\@sm {
+      @media (--mq-sm) {
+        width: 70%;
+      }
+    }
+    &\@sm-min {
+      @media (--mq-sm-min) {
+        width: 70%;
+      }
+    }
+    &\@md {
+      @media (--mq-md) {
+        width: 70%;
+      }
+    }
+    &\@md-min {
+      @media (--mq-md-min) {
+        width: 70%;
+      }
+    }
+    &\@lg {
+      @media (--mq-lg) {
+        width: 70%;
+      }
+    }
+  }
+  &--80 {
+    &\@mobile {
+      @media (--mq-mobile) {
+        width: 80%;
+      }
+    }
+    &\@xs {
+      @media (--mq-xs) {
+        width: 80%;
+      }
+    }
+    &\@sm {
+      @media (--mq-sm) {
+        width: 80%;
+      }
+    }
+    &\@sm-min {
+      @media (--mq-sm-min) {
+        width: 80%;
+      }
+    }
+    &\@md {
+      @media (--mq-md) {
+        width: 80%;
+      }
+    }
+    &\@md-min {
+      @media (--mq-md-min) {
+        width: 80%;
+      }
+    }
+    &\@lg {
+      @media (--mq-lg) {
+        width: 80%;
+      }
+    }
+  }
+  &--90 {
+    &\@mobile {
+      @media (--mq-mobile) {
+        width: 90%;
+      }
+    }
+    &\@xs {
+      @media (--mq-xs) {
+        width: 90%;
+      }
+    }
+    &\@sm {
+      @media (--mq-sm) {
+        width: 90%;
+      }
+    }
+    &\@sm-min {
+      @media (--mq-sm-min) {
+        width: 90%;
+      }
+    }
+    &\@md {
+      @media (--mq-md) {
+        width: 90%;
+      }
+    }
+    &\@md-min {
+      @media (--mq-md-min) {
+        width: 90%;
+      }
+    }
+    &\@lg {
+      @media (--mq-lg) {
+        width: 90%;
+      }
+    }
+  }
+  &--100 {
+    &\@mobile {
+      @media (--mq-mobile) {
+        width: 100%;
+      }
+    }
+    &\@xs {
+      @media (--mq-xs) {
+        width: 100%;
+      }
+    }
+    &\@sm {
+      @media (--mq-sm) {
+        width: 100%;
+      }
+    }
+    &\@sm-min {
+      @media (--mq-sm-min) {
+        width: 100%;
+      }
+    }
+    &\@md {
+      @media (--mq-md) {
+        width: 100%;
+      }
+    }
+    &\@md-min {
+      @media (--mq-md-min) {
+        width: 100%;
+      }
+    }
+    &\@lg {
+      @media (--mq-lg) {
+        width: 100%;
+      }
+    }
+  }
 }

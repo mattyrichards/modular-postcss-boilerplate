@@ -7,6 +7,8 @@ Normalize.css https://necolas.github.io/normalize.css/
 
 PureCSS grid
 
+Font Awesome
+
 PostCSS
 List all postcss plugins/modules (correct terminology) and small description.
 

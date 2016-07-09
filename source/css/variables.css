@@ -5,17 +5,19 @@ $color-white: #ffffff;
 $color-black: #000000;
 $color-brand-primary: #e72c7b;
 $color-border: #cbcdce;
-$color-error: #d75453;
+$color-error: #c83635;
+$color-error-dark: #bb1312;
 $color-success: #00b20c;
 $color-border: #cecece;
 
 /*
 -- Font sizes
 */
-$font-size-1: 1.2rem;
-$font-size-2: 1.4rem;
-$font-size-3: 1.6rem;
-$font-size-4: 2rem;
+$font-size-1: 1rem;
+$font-size-2: 1.2rem;
+$font-size-3: 1.4rem;
+$font-size-4: 1.6rem;
+$font-size-5: 2rem;
 
 /*
 -- Breakpoints

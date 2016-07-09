@@ -1,5 +1,6 @@
 /* Set html font size to enable use of rem units */
-
+/* stylelint-disable */
 html {
   font-size: 62.5%;
 }
+/* stylelint-enable */
