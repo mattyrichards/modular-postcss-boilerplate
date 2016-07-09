@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/mattyrichards/modular-css-boilerplate.git"
   },
-  "author": "",
+  "author": "Matt Richards",
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
@@ -30,6 +30,15 @@
     "postcss-simple-vars": "^2.0.0",
     "stylelint": "^6.5.1"
   },
+  "keywords": [
+    "postcss",
+    "itcss",
+    "BEM",
+    "Font Awesome",
+    "PureCSS",
+    "stylelint",
+    "CSS namespaces"
+  ]
   "bugs": {
     "url": "https://github.com/mattyrichards/modular-css-boilerplate/issues"
   },
