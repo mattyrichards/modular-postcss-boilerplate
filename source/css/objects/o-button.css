@@ -1,0 +1,47 @@
+.o-button {
+  display: inline-block;
+  margin-bottom: 0;
+  vertical-align: middle;
+  padding-top: 0;
+  padding-right: $base-spacing;
+  padding-bottom: 0;
+  padding-left: $base-spacing;
+  border-radius: 0;
+  text-align: center;
+  height: $height-form-element;
+  line-height: $height-form-element;
+  min-width: 3rem;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: all 0.2s ease;
+  font-size: $font-size-2;
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+  &:hover {
+    text-decoration: none;
+  }
+  &--primary {
+    color: $color-white;
+    background-color: $color-brand-primary;
+    border: 1px solid $color-brand-primary-dark;
+
+    &:hover {
+      background-color: $color-brand-primary-dark;
+      border-color: $color-brand-primary-darker;
+      color: $color-white;
+    }
+  }
+}
+/* stylelint-disable selector-no-type, selector-no-qualifying-type */
+
+input,
+button {
+  &.o-button {
+    height: calc($height-form-element + 2px);
+  }
+}
+/* stylelint-enable selector-no-type, selector-no-qualifying-type */

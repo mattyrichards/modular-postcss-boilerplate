@@ -2,7 +2,7 @@
   "rules": {
     "block-closing-brace-newline-after": "always",
     "block-opening-brace-space-before": "always",
-    "color-hex-case": "lower",
+    "color-hex-case": "upper",
     "declaration-colon-space-after": "always-single-line",
     "declaration-colon-space-before": "never",
     "declaration-block-no-duplicate-properties": true,

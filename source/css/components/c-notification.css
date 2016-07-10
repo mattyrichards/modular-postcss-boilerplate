@@ -12,4 +12,10 @@
       color: $color-white;
     }
   }
+  &__icon {
+    margin-right: $base-spacing-small;
+    &--warning {
+      color: $color-yellow;
+    }
+  }
 }
