@@ -1,9 +1,22 @@
-@define-mixin text-mixin $color:#000000 {
-  .colored-element {
-    color: $(color);
+/* stylelint-disable selector-no-vendor-prefix */
+
+@define-mixin placeholder-color $color: $color-grey-3 {
+  /* Chrome/Opera/Safari */
+  &::-webkit-input-placeholder {
+    color: $color;
+  }
+  /* Firefox 19+ */
+  &::-moz-placeholder {
+    color: $color;
+  }
+  /* IE 10+ */
+  &:-ms-input-placeholder {
+    color: $color;
+  }
+  /* Firefox 18- */
+  &:-moz-placeholder {
+    color: $color;
   }
 }
 
-@mixin text-mixin #ffffff;
-
-@mixin text-mixin;
+/* stylelint-enable selector-no-vendor-prefix */

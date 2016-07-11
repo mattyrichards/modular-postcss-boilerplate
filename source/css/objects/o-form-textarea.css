@@ -1,5 +1,4 @@
-.o-form-input {
-  height: $height-form-element;
+.o-form-textarea {
   background-color: $color-white;
   border: 1px solid $color-border;
   font-size: $font-size-2;
@@ -7,9 +6,13 @@
   font-family: inherit;
   padding-left: $base-spacing;
   padding-right: $base-spacing;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: $base-spacing;
+  padding-bottom: $base-spacing;
   margin-top: 0;
   margin-bottom: 0;
   @mixin placeholder-color;
+  resize: none;
+  &--resize {
+    resize: both;
+  }
 }

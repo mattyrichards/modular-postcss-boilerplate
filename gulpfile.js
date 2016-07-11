@@ -7,8 +7,8 @@ var paths = require('./paths'),
     atImport = require('postcss-import'),
     cssnano = require('cssnano'),
     rename = require('gulp-rename'),
-    nested = require('postcss-nested'),
     mixins = require('postcss-mixins'),
+    nested = require('postcss-nested'),
     discardComments = require('postcss-discard-comments'),
     calc = require('postcss-calc'),
     customMedia = require('postcss-custom-media'),
@@ -33,8 +33,8 @@ gulp.task('stylelint', function () {
 gulp.task('build-css-dev', function () {
   var processors = [
     atImport,
-    nested,
     mixins,
+    nested,
     customMedia,
     simpleVars,
     calc({mediaQueries: true})
