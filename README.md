@@ -1,21 +1,43 @@
 #Modular CSS Boilerplate
 
-To be continued...
+Architecture:
+Description of point of the boilerplate. What it is and what it achieves. Overview. Benefits + linting and styleguide already plugged in.
+More details:
+Scalable CSS solution suited to component based architectures. Uses principles of ITCSS i.e. low specificity throughout.
+Objects, components and utilities (namespaced). Most common objects and utilities have been added as part of the boilerplate.
+Utilities make use of Responsive suffixes
+http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/
+Naming conventions:
+Namespaces & BEM (special rules for utilities)
+Difference between objects and components i.e. objects are implementation agnostic (same link as above, I think...)
+
+Technologies/dependencies used:
 
 HTML5 Boilerplate https://html5boilerplate.com/
 Normalize.css https://necolas.github.io/normalize.css/
 
-PureCSS grid
+PureCSS grid - custom grid imported into codebase as o-grid.
 
-Font Awesome
+Font Awesome - dependency. Fonts imported into build.
 
-PostCSS
+PostCSS plugins
 List all postcss plugins/modules (correct terminology) and small description.
+- postcss-custom-media
+- postcss-import
+- postcss-mixins
+- postcss-nested
+- postcss-simple-vars
+- postcss-calc
 
-Responsive suffixes
-http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further/
-AND
-postcss-custom-media
+Production build:
+- autoprefixer
+- postcss-discard-comments (prod build)
+- cssnano (prod build)
 
-Namespaces & BEM (special rules for utilities)
-Difference between objects and components i.e. objects are implementation agnostic (same link as above, I think...)
+stylelint
+Describe what this is i.e. another postcss plugin
+Custom configuration part of the boilerplate.
++ postcss-reporter
+
+Styleguide
+postcss-style-guide plugin. Currently using the default theme, but a custom theme is in development (watch this space).

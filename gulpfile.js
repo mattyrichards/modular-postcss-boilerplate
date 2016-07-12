@@ -12,10 +12,11 @@ var paths = require('./paths'),
     discardComments = require('postcss-discard-comments'),
     calc = require('postcss-calc'),
     customMedia = require('postcss-custom-media'),
-    simpleVars = require('postcss-simple-vars');
+    simpleVars = require('postcss-simple-vars'),
+    styleGuide = require('postcss-style-guide');
 
 gulp.task('import-fonts', function() {
-  gulp.src(paths.sourceFonts)
+  gulp.src(paths.sourceFonts + '/*')
     .pipe(gulp.dest(paths.buildFonts));
 });
 
@@ -37,7 +38,12 @@ gulp.task('build-css-dev', function () {
     nested,
     customMedia,
     simpleVars,
-    calc({mediaQueries: true})
+    calc({mediaQueries: true}),
+    styleGuide({
+      project: 'Project name',
+      dest: paths.buildStyleGuide + '/index.html',
+      showCode: true
+    })
   ];
   return gulp.src(paths.sourceCSS + '/root.css')
     .pipe(postcss(processors))

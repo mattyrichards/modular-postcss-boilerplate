@@ -1,3 +1,20 @@
+/*
+@styleguide
+
+@title c-notification
+
+Use the button classes on and `<a>`, `<button>`, `<input>` elements.
+
+<div class="c-notification">
+  <span class="fa fa-warning c-notification__icon c-notification__icon--warning"></span>
+  Some <strong>bold</strong> Text. And a <a href="#" class="c-notification__link">hyperlink</a> too.
+</div>
+
+    <div class="c-notification">
+      <span class="fa fa-warning c-notification__icon c-notification__icon--warning"></span> Some <strong>bold</strong> Text. And a <a href="#" class="c-notification__link">hyperlink</a> too.
+    </div>
+*/
+
 .c-notification {
   border: 1px solid $color-error-dark;
   background-color: $color-error;
