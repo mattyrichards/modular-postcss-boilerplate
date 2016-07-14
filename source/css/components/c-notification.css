@@ -3,21 +3,20 @@
 
 @title c-notification
 
-Use the button classes on and `<a>`, `<button>`, `<input>` elements.
+A notification/alert component. Currently has "error" and "success" modifiers.
 
-<div class="c-notification">
+<div class="c-notification c-notification--error">
   <span class="fa fa-warning c-notification__icon c-notification__icon--warning"></span>
-  Some <strong>bold</strong> Text. And a <a href="#" class="c-notification__link">hyperlink</a> too.
+  You are using an <strong>outdated</strong> browser.
+  Please <a href="http://browsehappy.com/" class="c-notification__link">upgrade your browser</a> to improve your experience.
 </div>
 
-    <div class="c-notification">
-      <span class="fa fa-warning c-notification__icon c-notification__icon--warning"></span> Some <strong>bold</strong> Text. And a <a href="#" class="c-notification__link">hyperlink</a> too.
+    <div class="c-notification c-notification--error">
+      <span class="fa fa-warning c-notification__icon c-notification__icon--warning"></span>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="c-notification__link">upgrade your browser</a> to improve your experience.
     </div>
 */
 
 .c-notification {
-  border: 1px solid $color-error-dark;
-  background-color: $color-error;
   color: $color-white;
   font-size: $font-size-2;
   padding: $base-spacing;
@@ -34,5 +33,13 @@ Use the button classes on and `<a>`, `<button>`, `<input>` elements.
     &--warning {
       color: $color-yellow;
     }
+  }
+  &--success {
+    border: 1px solid $color-success-dark;
+    background-color: $color-success;
+  }
+  &--error {
+    border: 1px solid $color-error-dark;
+    background-color: $color-error;
   }
 }

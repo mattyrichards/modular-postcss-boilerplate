@@ -3,7 +3,7 @@
 
 @title c-progress
 
-Use the button classes on and `<a>`, `<button>`, `<input>` elements.
+A scalable progress indicator component. If N is the number of "c-progress__item" elements, then the number of "c-progress__path__bar" elements is N - 1.
 
 <div class="c-progress">
   <div class="c-progress__path">
@@ -66,7 +66,7 @@ Use the button classes on and `<a>`, `<button>`, `<input>` elements.
     display: flex;
     justify-content: space-between;
     position: absolute;
-    width: calc(100% - 1rem);
+    width: calc(100% - ($width-step / 2));
     right: 0;
     left: 0;
     top: calc(($width-step / 2) - ($height-bar / 2));
