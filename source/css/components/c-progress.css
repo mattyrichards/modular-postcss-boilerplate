@@ -7,7 +7,9 @@ Use the button classes on and `<a>`, `<button>`, `<input>` elements.
 
 <div class="c-progress">
   <div class="c-progress__path">
-    <div class="c-progress__path__bar" style="width:65%"></div>
+    <div class="c-progress__path__bar c-progress__path__bar--complete"></div>
+    <div class="c-progress__path__bar c-progress__path__bar--complete"></div>
+    <div class="c-progress__path__bar"></div>
   </div>
   <div class="c-progress__steps">
     <div class="c-progress__item c-progress__item--complete">
@@ -31,7 +33,9 @@ Use the button classes on and `<a>`, `<button>`, `<input>` elements.
 
     <div class="c-progress">
       <div class="c-progress__path">
-        <div class="c-progress__path__bar" style="width:65%"></div>
+        <div class="c-progress__path__bar c-progress__path__bar--complete"></div>
+        <div class="c-progress__path__bar c-progress__path__bar--complete"></div>
+        <div class="c-progress__path__bar"></div>
       </div>
       <div class="c-progress__steps">
         <div class="c-progress__item c-progress__item--complete">
@@ -55,20 +59,27 @@ Use the button classes on and `<a>`, `<button>`, `<input>` elements.
 */
 
 .c-progress {
+  $width-step: 2.5rem;
+  $height-bar: 0.5rem;
   position: relative;
   &__path {
+    display: flex;
+    justify-content: space-between;
     position: absolute;
+    width: calc(100% - 1rem);
     right: 0;
     left: 0;
-    top: 1rem;
+    top: calc(($width-step / 2) - ($height-bar / 2));
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
-    height: 0.4rem;
+    height: $height-bar;
     background-color: $color-inactive;
     &__bar {
+      flex-grow: 1;
       height: 100%;
-      background-color: $color-brand-primary;
+      &--complete {
+        background-color: $color-brand-primary;
+      }
     }
   }
   &__steps {
@@ -82,15 +93,20 @@ Use the button classes on and `<a>`, `<button>`, `<input>` elements.
       text-align: center;
       background-color: $color-inactive;
       border-radius: 50%;
-      width: 2.5rem;
-      height: 2.5rem;
-      line-height: 2.5rem;
+      font-size: $font-size-2;
+      width: $width-step;
+      height: $width-step;
+      line-height: $width-step;
       margin-left: auto;
       margin-right: auto;
     }
     &__label {
+      position: absolute;
+      left: -$width-step;
+      width: calc($width-step * 3);
       text-align: center;
       color: $color-grey-3;
+      font-size: $font-size-1;
       margin-top: $base-spacing-small;
     }
     &--complete  &__step {
