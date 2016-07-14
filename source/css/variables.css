@@ -7,6 +7,10 @@ $color-brand-primary: #28536C;
 $color-brand-primary-light: #476F87;
 $color-brand-primary-dark: #113951;
 $color-brand-primary-darker: #032336;
+$color-brand-secondary: #74276D;
+$color-brand-secondary-light: #90488A;
+$color-brand-secondary-dark: #570E51;
+$color-brand-secondary-darker: #3A0035;
 $color-error: #A8383B;
 $color-error-light: #D3696C;
 $color-error-dark: #7E1518;
@@ -21,6 +25,7 @@ $color-grey-2: #DBDCDD;
 $color-grey-1: #F2F2F2;
 $color-grey-0: #FAFAFA;
 $color-border: $color-grey-2;
+$color-inactive: $color-grey-2;
 $color-yellow: #E1D200;
 
 /*

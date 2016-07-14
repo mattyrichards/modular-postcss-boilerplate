@@ -1,0 +1,109 @@
+/*
+@styleguide
+
+@title c-progress
+
+Use the button classes on and `<a>`, `<button>`, `<input>` elements.
+
+<div class="c-progress">
+  <div class="c-progress__path">
+    <div class="c-progress__path__bar" style="width:65%"></div>
+  </div>
+  <div class="c-progress__steps">
+    <div class="c-progress__item c-progress__item--complete">
+      <div class="c-progress__item__step">1</div>
+      <div class="c-progress__item__label">First step</div>
+    </div>
+    <div class="c-progress__item c-progress__item--complete">
+      <div class="c-progress__item__step">2</div>
+      <div class="c-progress__item__label">Second step</div>
+    </div>
+    <div class="c-progress__item c-progress__item--active">
+      <div class="c-progress__item__step">3</div>
+      <div class="c-progress__item__label">Third step</div>
+    </div>
+    <div class="c-progress__item">
+      <div class="c-progress__item__step">4</div>
+      <div class="c-progress__item__label">Fourth step</div>
+    </div>
+  </div>
+</div>
+
+    <div class="c-progress">
+      <div class="c-progress__path">
+        <div class="c-progress__path__bar" style="width:65%"></div>
+      </div>
+      <div class="c-progress__steps">
+        <div class="c-progress__item c-progress__item--complete">
+          <div class="c-progress__item__step">1</div>
+          <div class="c-progress__item__label">First step</div>
+        </div>
+        <div class="c-progress__item c-progress__item--complete">
+          <div class="c-progress__item__step">2</div>
+          <div class="c-progress__item__label">Second step</div>
+        </div>
+        <div class="c-progress__item c-progress__item--active">
+          <div class="c-progress__item__step">3</div>
+          <div class="c-progress__item__label">Third step</div>
+        </div>
+        <div class="c-progress__item">
+          <div class="c-progress__item__step">4</div>
+          <div class="c-progress__item__label">Fourth step</div>
+        </div>
+      </div>
+    </div>
+*/
+
+.c-progress {
+  position: relative;
+  &__path {
+    position: absolute;
+    right: 0;
+    left: 0;
+    top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: 0.4rem;
+    background-color: $color-inactive;
+    &__bar {
+      height: 100%;
+      background-color: $color-brand-primary;
+    }
+  }
+  &__steps {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    position: relative;
+    &__step {
+      color: $color-white;
+      text-align: center;
+      background-color: $color-inactive;
+      border-radius: 50%;
+      width: 2.5rem;
+      height: 2.5rem;
+      line-height: 2.5rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__label {
+      text-align: center;
+      color: $color-grey-3;
+      margin-top: $base-spacing-small;
+    }
+    &--complete  &__step {
+      background-color: $color-brand-primary;
+    }
+    &--complete  &__label {
+      color: $color-brand-primary;
+    }
+    &--active  &__step {
+      background-color: $color-brand-secondary;
+    }
+    &--active  &__label {
+      color: $color-brand-secondary;
+    }
+  }
+}
