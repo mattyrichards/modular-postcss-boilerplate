@@ -1,3 +1,17 @@
+/*
+@styleguide
+
+@title o-button
+
+Standardised buttons. Can be applied to anchors, inputs and buttons.
+
+<a class="o-button o-button--primary">Primary button</a>
+<button class="o-button o-button--secondary">Secondary button</button>
+
+    <a class="o-button o-button--primary">Primary button</a>
+    <button class="o-button o-button--secondary">Secondary button</button>
+*/
+
 .o-button {
   display: inline-block;
   margin-bottom: 0;
@@ -32,6 +46,17 @@
     &:hover {
       background-color: $color-brand-primary-dark;
       border-color: $color-brand-primary-darker;
+      color: $color-white;
+    }
+  }
+  &--secondary {
+    color: $color-white;
+    background-color: $color-brand-secondary;
+    border: 1px solid $color-brand-secondary-dark;
+
+    &:hover {
+      background-color: $color-brand-secondary-dark;
+      border-color: $color-brand-secondary-darker;
       color: $color-white;
     }
   }

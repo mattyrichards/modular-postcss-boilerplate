@@ -13,7 +13,8 @@ var paths = require('./paths'),
     calc = require('postcss-calc'),
     customMedia = require('postcss-custom-media'),
     simpleVars = require('postcss-simple-vars'),
-    styleGuide = require('postcss-style-guide');
+    styleGuide = require('postcss-style-guide'),
+    colorFunction = require('postcss-color-function');
 
 gulp.task('import-fonts', function() {
   gulp.src(paths.sourceFonts + '/*')
@@ -38,6 +39,7 @@ gulp.task('build-css-dev', function () {
     nested,
     customMedia,
     simpleVars,
+    colorFunction,
     calc({mediaQueries: true}),
     styleGuide({
       project: 'Project name',
@@ -60,6 +62,7 @@ gulp.task('build-css-prod', function () {
     mixins,
     simpleVars,
     customMedia,
+    colorFunction,
     calc({mediaQueries: true}),
     discardComments,
     autoprefixer({browsers: ['last 2 versions']}),

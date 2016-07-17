@@ -1,0 +1,14 @@
+.u-background-color {
+  &--brand-primary {
+    background-color: $color-brand-primary;
+  }
+  &--brand-primary-dark {
+    background-color: $color-brand-primary-dark;
+  }
+  &--brand-primary-darker {
+    background-color: $color-brand-primary-darker;
+  }
+  &--brand-primary-light {
+    background-color: $color-brand-primary-light;
+  }
+}
