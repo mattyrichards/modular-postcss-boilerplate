@@ -13,6 +13,8 @@ Difference between objects and components i.e. objects are implementation agnost
 
 Technologies/dependencies used:
 
+PostCSS
+Tooling via Gulp (commands below)
 HTML5 Boilerplate https://html5boilerplate.com/
 Normalize.css https://necolas.github.io/normalize.css/
 
@@ -28,6 +30,7 @@ List all postcss plugins/modules (correct terminology) and small description.
 - postcss-nested
 - postcss-simple-vars
 - postcss-calc
+- postcss-color-function
 
 Production build:
 - autoprefixer
