@@ -60,6 +60,9 @@ Standardised buttons. Can be applied to anchors, inputs and buttons.
       color: $color-white;
     }
   }
+  &--full-width {
+    width: 100%;
+  }
 }
 /* stylelint-disable selector-no-type, selector-no-qualifying-type */
 

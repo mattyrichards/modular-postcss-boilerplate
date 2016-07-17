@@ -15,6 +15,9 @@
   &--extra-large {
     margin-left: $base-spacing-extra-large;
   }
+  &--auto {
+    margin-left: auto;
+  }
   &--none {
     margin-left: 0;
     &\@mobile {

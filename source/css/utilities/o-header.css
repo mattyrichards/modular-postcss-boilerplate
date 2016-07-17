@@ -1,0 +1,18 @@
+.o-header {
+  margin-top: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  &--primary {
+    font-size: $font-size-header-primary;
+    margin-bottom: $base-spacing-large;
+  }
+  &--secondary {
+    font-size: $font-size-header-secondary;
+    margin-bottom: $base-spacing;
+  }
+  &--tertiary {
+    font-size: $font-size-header-tertiary;
+    font-weight: bold;
+    margin-bottom: $base-spacing;
+  }
+}

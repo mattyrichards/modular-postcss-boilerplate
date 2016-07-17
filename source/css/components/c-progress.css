@@ -85,6 +85,7 @@ A scalable progress indicator component. If N is the number of "c-progress__item
   &__steps {
     display: flex;
     justify-content: space-between;
+    padding-bottom: calc($base-spacing-small + $font-size-1);
   }
   &__item {
     position: relative;

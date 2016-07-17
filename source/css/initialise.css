@@ -2,6 +2,26 @@
 /* stylelint-disable */
 html {
   font-size: 62.5%;
-  box-sizing: border-box;
+  * {
+    box-sizing: border-box;
+  }
+}
+div,
+p,
+a,
+span {
+  font-size: $font-size-2;
+}
+a {
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    text-decoration: underline;
+    color: $color-brand-primary;
+  }
+  &:hover {
+    text-decoration: none;
+  }
 }
 /* stylelint-enable */
