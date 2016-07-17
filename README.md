@@ -37,10 +37,12 @@ Production build:
 - postcss-discard-comments (prod build)
 - cssnano (prod build)
 
+Maybe something about initial production size filesize after optimisation.
+
 stylelint
 Describe what this is i.e. another postcss plugin
 Custom configuration part of the boilerplate.
 + postcss-reporter
 
 Styleguide
-postcss-style-guide plugin. Currently using the default theme, but a custom theme is in development (watch this space).
+postcss-style-guide plugin. Currently using the default theme (which is pretty ugly). A new custom theme is in development (watch this space).
