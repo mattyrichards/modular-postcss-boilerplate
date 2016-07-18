@@ -34,7 +34,6 @@ List all postcss plugins/modules (correct terminology) and small description.
 
 Production build:
 - autoprefixer
-- postcss-discard-comments (prod build)
 - cssnano (prod build)
 
 Maybe something about initial production size filesize after optimisation.

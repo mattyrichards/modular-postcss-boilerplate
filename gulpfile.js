@@ -9,24 +9,39 @@ var paths = require('./paths'),
     rename = require('gulp-rename'),
     mixins = require('postcss-mixins'),
     nested = require('postcss-nested'),
-    discardComments = require('postcss-discard-comments'),
     calc = require('postcss-calc'),
     customMedia = require('postcss-custom-media'),
     simpleVars = require('postcss-simple-vars'),
     styleGuide = require('postcss-style-guide'),
     colorFunction = require('postcss-color-function');
 
+// Move Font Awesome fonts from node_modules to build folder
 gulp.task('import-fonts', function() {
   gulp.src(paths.sourceFonts + '/*')
     .pipe(gulp.dest(paths.buildFonts));
 });
 
-gulp.task('stylelint', function () {
+// Lint the CSS
+gulp.task('css-lint', function () {
   return gulp.src(paths.sourceCSS + '/**/*.css')
     .pipe(postcss(
       [
         stylelint(),
         reporter({ clearMessages: true })
+      ]
+    ));
+});
+
+// Build styleguide
+gulp.task('styleguide', function () {
+  return gulp.src(paths.sourceCSS + '/**/*.css')
+    .pipe(postcss(
+      [
+        styleGuide({
+          project: 'Project name',
+          dest: paths.buildStyleGuide + '/index.html',
+          showCode: true
+        })
       ]
     ));
 });
@@ -64,9 +79,15 @@ gulp.task('build-css-prod', function () {
     customMedia,
     colorFunction,
     calc({mediaQueries: true}),
-    discardComments,
+    styleGuide({
+      project: 'Project name',
+      dest: paths.buildStyleGuide + '/index.html',
+      showCode: true
+    }),
     autoprefixer({browsers: ['last 2 versions']}),
-    cssnano
+    cssnano({
+      zindex: false
+    })
   ];
   return gulp.src(paths.sourceCSS + '/root.css')
     .pipe(postcss(processors))
@@ -74,8 +95,10 @@ gulp.task('build-css-prod', function () {
     .pipe(gulp.dest(paths.buildCSS));
 });
 
-gulp.task('build-prod', ['import-fonts', 'build-css-prod']);
+// Run this task to build a production ready codebase
+gulp.task('prod', ['import-fonts', 'build-css-prod']);
 
-gulp.task('default', ['import-fonts', 'stylelint', 'build-css-dev'], function() {
-  gulp.watch(paths.sourceCSS + '/**/*.css', ['stylelint', 'build-css-dev']);
+// Run this task to run a development build and also watch for changes
+gulp.task('dev', ['import-fonts', 'css-lint', 'build-css-dev'], function() {
+  gulp.watch(paths.sourceCSS + '/**/*.css', ['css-lint', 'build-css-dev']);
 });
