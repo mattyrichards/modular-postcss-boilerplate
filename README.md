@@ -20,7 +20,9 @@ Normalize.css https://necolas.github.io/normalize.css/
 
 PureCSS grid - custom grid imported into codebase as o-grid.
 
-Font Awesome - dependency. Fonts imported into build.
+Open Iconic - 200+ open source SVG icon set (https://github.com/iconic/open-iconic).
+
+BrowerSync - dev and dev-styleguide local servers with auto-refresh
 
 PostCSS plugins
 List all postcss plugins/modules (correct terminology) and small description.
@@ -36,7 +38,7 @@ Production build:
 - autoprefixer
 - cssnano (prod build)
 
-Maybe something about initial production size filesize after optimisation.
+
 
 stylelint
 Describe what this is i.e. another postcss plugin
@@ -45,3 +47,11 @@ Custom configuration part of the boilerplate.
 
 Styleguide
 postcss-style-guide plugin. Currently using the default theme (which is pretty ugly). A new custom theme is in development (watch this space).
+
+Gulp commands
+
+(some info about exactly what each build creates. Maybe something about initial production size filesize after optimisation.)
+
+dev
+prod
+dev-styleguide

@@ -14,12 +14,13 @@
   "license": "ISC",
   "devDependencies": {
     "autoprefixer": "^6.3.6",
+    "browser-sync": "^2.13.0",
     "cssnano": "^3.7.1",
-    "font-awesome": "^4.6.3",
     "gulp": "^3.9.1",
     "gulp-postcss": "^6.1.1",
     "gulp-rename": "^1.2.2",
     "normalize.css": "^4.1.1",
+    "open-iconic": "^1.1.1",
     "postcss-calc": "^5.2.1",
     "postcss-color-function": "^2.0.1",
     "postcss-custom-media": "^5.0.1",
@@ -35,10 +36,11 @@
     "postcss",
     "itcss",
     "BEM",
-    "Font Awesome",
+    "Open Iconic",
     "PureCSS",
     "stylelint",
-    "CSS namespaces"
+    "CSS namespaces",
+    "BrowerSync"
   ],
   "bugs": {
     "url": "https://github.com/mattyrichards/modular-css-boilerplate/issues"

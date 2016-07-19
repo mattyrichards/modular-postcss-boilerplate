@@ -13,35 +13,22 @@ var paths = require('./paths'),
     customMedia = require('postcss-custom-media'),
     simpleVars = require('postcss-simple-vars'),
     styleGuide = require('postcss-style-guide'),
-    colorFunction = require('postcss-color-function');
+    colorFunction = require('postcss-color-function'),
+    browserSync = require('browser-sync').create();
 
-// Move Font Awesome fonts from node_modules to build folder
-gulp.task('import-fonts', function() {
-  gulp.src(paths.sourceFonts + '/*')
-    .pipe(gulp.dest(paths.buildFonts));
+// Move Open Iconic SVG icon files from node_modules to build folder
+gulp.task('import-icons', function() {
+  gulp.src(paths.sourceIcons + '/*')
+    .pipe(gulp.dest(paths.buildIcons));
 });
 
 // Lint the CSS
-gulp.task('css-lint', function () {
+gulp.task('lint-css', function () {
   return gulp.src(paths.sourceCSS + '/**/*.css')
     .pipe(postcss(
       [
         stylelint(),
         reporter({ clearMessages: true })
-      ]
-    ));
-});
-
-// Build styleguide
-gulp.task('styleguide', function () {
-  return gulp.src(paths.sourceCSS + '/**/*.css')
-    .pipe(postcss(
-      [
-        styleGuide({
-          project: 'Project name',
-          dest: paths.buildStyleGuide + '/index.html',
-          showCode: true
-        })
       ]
     ));
 });
@@ -65,7 +52,8 @@ gulp.task('build-css-dev', function () {
   return gulp.src(paths.sourceCSS + '/root.css')
     .pipe(postcss(processors))
     .pipe(rename('main.css'))
-    .pipe(gulp.dest(paths.buildCSS));
+    .pipe(gulp.dest(paths.buildCSS))
+    .pipe(browserSync.reload({stream: true}));
 });
 
 // Building CSS for production use.
@@ -96,9 +84,29 @@ gulp.task('build-css-prod', function () {
 });
 
 // Run this task to build a production ready codebase
-gulp.task('prod', ['import-fonts', 'build-css-prod']);
+gulp.task('prod', ['import-icons', 'build-css-prod']);
 
-// Run this task to run a development build and also watch for changes
-gulp.task('dev', ['import-fonts', 'css-lint', 'build-css-dev'], function() {
-  gulp.watch(paths.sourceCSS + '/**/*.css', ['css-lint', 'build-css-dev']);
+// Run this task to run a development build, start a dev server and auto-refresh on CSS changes
+gulp.task('dev', ['import-icons', 'lint-css', 'build-css-dev'], function() {
+  browserSync.init({
+      server: {
+          baseDir: paths.build
+      }
+  });
+  gulp.watch(paths.sourceCSS + '/**/*.css', ['lint-css', 'build-css-dev']);
+});
+
+// Watch task associated with styleguide build in order to refresh page after new styleguide generation
+gulp.task('watch-css', ['lint-css', 'build-css-dev'], function() {
+  browserSync.reload();
+});
+
+// Run this task to run a development styleguide build, start a dev server and auto-refresh on CSS changes
+gulp.task('dev-styleguide', ['import-icons', 'lint-css', 'build-css-dev'], function() {
+  browserSync.init({
+      server: {
+          baseDir: paths.buildStyleGuide
+      }
+  });
+  gulp.watch(paths.sourceCSS + '/**/*.css', ['watch-css']);
 });
