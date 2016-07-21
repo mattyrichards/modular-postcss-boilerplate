@@ -38,7 +38,7 @@ gulp.task('build-css-dev', function () {
     colorFunction,
     calc({mediaQueries: true}),
     styleGuide({
-      project: 'Project name',
+      project: 'Modular PostCSS',
       dest: paths.buildStyleGuide + '/index.html',
       showCode: true
     })
@@ -62,7 +62,7 @@ gulp.task('build-css-prod', function () {
     colorFunction,
     calc({mediaQueries: true}),
     styleGuide({
-      project: 'Project name',
+      project: 'Modular PostCSS',
       dest: paths.buildStyleGuide + '/index.html',
       showCode: true
     }),

@@ -1,14 +1,14 @@
 {
-  "name": "modular-css-boilerplate",
+  "name": "modular-postcss-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Modular CSS boilerplate for Front End projects in PostCSS ecosystem",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mattyrichards/modular-css-boilerplate.git"
+    "url": "git+https://github.com/mattyrichards/modular-postcss-boilerplate.git"
   },
   "author": "Matt Richards",
   "license": "ISC",
@@ -32,8 +32,8 @@
     "stylelint": "^6.5.1"
   },
   "keywords": [
-    "postcss",
-    "itcss",
+    "PostCSS",
+    "ITCSS",
     "BEM",
     "PureCSS",
     "stylelint",
@@ -41,7 +41,7 @@
     "BrowerSync"
   ],
   "bugs": {
-    "url": "https://github.com/mattyrichards/modular-css-boilerplate/issues"
+    "url": "https://github.com/mattyrichards/modular-postcss-boilerplate/issues"
   },
-  "homepage": "https://github.com/mattyrichards/modular-css-boilerplate#readme"
+  "homepage": "https://github.com/mattyrichards/modular-postcss-boilerplate#readme"
 }
