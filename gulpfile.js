@@ -16,12 +16,6 @@ var paths = require('./paths'),
     colorFunction = require('postcss-color-function'),
     browserSync = require('browser-sync').create();
 
-// Move Open Iconic SVG icon files from node_modules to build folder
-gulp.task('import-icons', function() {
-  gulp.src(paths.sourceIcons + '/*')
-    .pipe(gulp.dest(paths.buildIcons));
-});
-
 // Lint the CSS
 gulp.task('lint-css', function () {
   return gulp.src(paths.sourceCSS + '/**/*.css')
@@ -84,10 +78,10 @@ gulp.task('build-css-prod', function () {
 });
 
 // Run this task to build a production ready codebase
-gulp.task('prod', ['import-icons', 'build-css-prod']);
+gulp.task('prod', ['build-css-prod']);
 
 // Run this task to run a development build, start a dev server and auto-refresh on CSS changes
-gulp.task('dev', ['import-icons', 'lint-css', 'build-css-dev'], function() {
+gulp.task('dev', ['lint-css', 'build-css-dev'], function() {
   browserSync.init({
       server: {
           baseDir: paths.build
@@ -102,7 +96,7 @@ gulp.task('watch-css', ['lint-css', 'build-css-dev'], function() {
 });
 
 // Run this task to run a development styleguide build, start a dev server and auto-refresh on CSS changes
-gulp.task('dev-styleguide', ['import-icons', 'lint-css', 'build-css-dev'], function() {
+gulp.task('dev-styleguide', ['lint-css', 'build-css-dev'], function() {
   browserSync.init({
       server: {
           baseDir: paths.buildStyleGuide

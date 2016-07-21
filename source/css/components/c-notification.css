@@ -6,13 +6,12 @@
 A notification/alert component. Currently has "error" and "success" modifiers.
 
 <div class="c-notification c-notification--error">
-  <span class="fa fa-warning c-notification__icon c-notification__icon--warning"></span>
   You are using an <strong>outdated</strong> browser.
   Please <a href="http://browsehappy.com/" class="c-notification__link">upgrade your browser</a> to improve your experience.
 </div>
 
     <div class="c-notification c-notification--error">
-      <span class="fa fa-warning c-notification__icon c-notification__icon--warning"></span>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="c-notification__link">upgrade your browser</a> to improve your experience.
+      You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="c-notification__link">upgrade your browser</a> to improve your experience.
     </div>
 */
 
@@ -26,12 +25,6 @@ A notification/alert component. Currently has "error" and "success" modifiers.
     &:hover,
     &:active {
       color: $color-white;
-    }
-  }
-  &__icon {
-    margin-right: $base-spacing-small;
-    &--warning {
-      color: $color-yellow;
     }
   }
   &--success {
