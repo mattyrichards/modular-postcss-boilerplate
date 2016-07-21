@@ -1,7 +1,3 @@
-<img align="right" width="95" height="95"
-     title="Philosopher’s stone, logo of PostCSS"
-     src="http://postcss.github.io/postcss/logo.svg">
-     
 #Modular PostCSS Boilerplate
 
 A CSS boilerplate using a scalable, modular architecture complete with tooling, linting and style guide.
@@ -17,6 +13,10 @@ A few demo UI elements are [available here](http://www.kreative.co.uk/github/mod
 
 ##Technology
 
+<img align="right" width="95" height="95"
+     title="Philosopher’s stone, logo of PostCSS"
+     src="http://postcss.github.io/postcss/logo.svg">
+     
 Gulp is used for tooling. The following PostCSS plugins are used in the Gulp pipeline:
 
 - [postcss-simple-vars](https://github.com/postcss/postcss-simple-vars). Traditional pre-processor style CSS variables.
