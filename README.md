@@ -1,31 +1,33 @@
 #Modular PostCSS Boilerplate
 
-A CSS boilerplate using a scalable, modular architecture complete with tooling, linting and style guide.
+<img align="right" width="95" height="95"
+     title="Philosopher’s stone, logo of PostCSS"
+     src="http://postcss.github.io/postcss/logo.svg">
 
-Add a PostCSS logo somewhere here for shinyness - see simple vars README
+A CSS boilerplate using a scalable, modular architecture complete with tooling, linting and style guide.
 
 ##Architecture
 
-The architecture loosely follow's the principles of Harry Roberts' ITCSS. Specificity is kept as low/flat as possible throughout the codebase. BEM naming convention is utilised to help achieve this. While BEM helps us to understand the local relationship in a UI element (component), [namespace prefixes](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) are
-also utilised. These namespaces help us to understand the global relationship between components. The boilerplate includes the most commonly used utilities and objects. Utilities use responsive suffixes e.g. `.u-margin-left@xs`.
+The architecture loosely follow's the principles of Harry Roberts' [ITCSS](http://itcss.io). Specificity is kept as low/flat as possible throughout the codebase. [BEM](http://getbem.com) naming convention is utilised to help achieve this. While BEM helps us to understand the local relationship in UI elements (components), [namespace prefixes](http://csswizardry.com/2015/08/bemit-taking-the-bem-naming-convention-a-step-further) are
+also utilised to help us understand the global relationship between components. The boilerplate includes the most commonly used utilities and objects. Utilities use responsive suffixes e.g. `.u-margin-left@xs`.
 
 The compiled, minified, production-ready CSS file currently comes in at approximately 50kb.
 
-A few demo UI elements are available here. The corresponding generated style guide is available here.
+A few demo UI elements are [available here](http://www.kreative.co.uk/github/modular-postcss-boilerplate). The corresponding generated style guide is [available here](http://www.kreative.co.uk/github/modular-postcss-boilerplate/styleguide).
 
 ##Technology
 
 Gulp is used for tooling. The following PostCSS plugins are used in the Gulp pipeline:
 
 - [postcss-simple-vars](https://github.com/postcss/postcss-simple-vars). Traditional pre-processor style CSS variables.
-- [postcss-import](https://github.com/postcss/postcss-import). Allows us to break up our CSS into separate files and use '@import'.
+- [postcss-import](https://github.com/postcss/postcss-import). Allows us to break up our CSS into separate files and use `@import`.
 - [postcss-custom-media](https://github.com/postcss/postcss-custom-media). Shorthand media queries.
 - [postcss-nested](https://github.com/postcss/postcss-nested). Traditional pre-processor style nesting.
 - [postcss-mixins](https://github.com/postcss/postcss-mixins). Traditional pre-processor style mixins.
 - [postcss-color-function](https://github.com/postcss/postcss-color-function). Some common methods to modify CSS colours on the fly.
 - [postcss-calc](https://github.com/postcss/postcss-calc). Math calc() is done via JavaScript if possible rather than in client.
 - [postcss-nano](https://github.com/ben-eb/cssnano). Used on production build. Groups a lot of optimisation plugins together e.g. minification, de-duping, removing comments etc
-- [autoprefixer](https://github.com/postcss/autoprefixer). Adds vendor prefixes if necessary to CSS. Based on caniuse.com.
+- [autoprefixer](https://github.com/postcss/autoprefixer). Adds vendor prefixes if necessary to CSS. Based on [caniuse](http://caniuse.com).
 
 [Normalize.css](https://necolas.github.io/normalize.css/) is used to reset the CSS. [HTML5 Boilerplate](https://html5boilerplate.com) is used for the demo template.
 
