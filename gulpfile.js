@@ -68,7 +68,9 @@ gulp.task('build-css-prod', function () {
     }),
     autoprefixer({browsers: ['last 2 versions']}),
     cssnano({
-      zindex: false
+      zindex: false,
+      autoprefixer: false,
+      calc: false
     })
   ];
   return gulp.src(paths.sourceCSS + '/root.css')
