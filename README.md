@@ -45,7 +45,7 @@ CSS is linted using the PostCSS plugin [stylelint](http://stylelint.io). It's si
 
 ##Gulp commands
 
-There is an assumption that you've already run `npm install` after cloning and have Gulp install globally.
+(Assuming you have cloned the repo, run `npm install` and have Gulp install globally)
 
 Build a production ready, minified CSS file in `/build/css/main.css`:
 ```
