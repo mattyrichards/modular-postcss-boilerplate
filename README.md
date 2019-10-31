@@ -9,7 +9,7 @@ also utilised to help us understand the global relationship between components. 
 
 The compiled, minified, production-ready CSS file currently comes in at approximately 50kb.
 
-A few demo UI elements are [available here](http://www.kreative.co.uk/github/modular-postcss-boilerplate). The corresponding generated style guide is [available here](http://www.kreative.co.uk/github/modular-postcss-boilerplate/styleguide).
+A few demo UI elements are [available here](http://www.mttrchrds.com/github/modular-postcss-boilerplate). The corresponding generated style guide is [available here](http://www.mttrchrds.com/github/modular-postcss-boilerplate/styleguide).
 
 ##Technology
 
